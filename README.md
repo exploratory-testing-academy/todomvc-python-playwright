@@ -7,7 +7,7 @@ Primary test target - vanilla JS https://todomvc.com/examples/vanillajs/
 
 Claims collection as titles of tests at https://github.com/tastejs/todomvc/tree/master/tests
 
-`
+```
  No Todos
         ✓ should hide #main and #footer
       New Todo
@@ -44,4 +44,4 @@ Claims collection as titles of tests at https://github.com/tastejs/todomvc/tree/
         ✓ should allow me to display completed items
         ✓ should allow me to display all items
         ✓ should highlight the currently applied filter
-`
+```
