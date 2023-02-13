@@ -3,43 +3,45 @@ To Do MVC is a popular frontend developer repeat problem for trying out frontend
 
 Site with various implementations: https://todomvc.com 
 
+Primary test target - vanilla JS https://todomvc.com/examples/vanillajs/
+
 Claims collection as titles of tests at https://github.com/tastejs/todomvc/tree/master/tests
 
 `
  No Todos
-        ✓ should hide #main and #footer (201ms)
+        ✓ should hide #main and #footer
       New Todo
-        ✓ should allow me to add todo items (548ms)
-        ✓ should clear text input field when an item is added (306ms)
-        ✓ should trim text input (569ms)
-        ✓ should show #main and #footer when items added (405ms)
+        ✓ should allow me to add todo items
+        ✓ should clear text input field when an item is added 
+        ✓ should trim text input
+        ✓ should show #main and #footer when items added
       Mark all as completed
-        ✓ should allow me to mark all items as completed (1040ms)
-        ✓ should allow me to clear the completion state of all items (1014ms)
-        ✓ complete all checkbox should update state when items are completed (1413ms)
+        ✓ should allow me to mark all items as completed
+        ✓ should allow me to clear the completion state of all items 
+        ✓ complete all checkbox should update state when items are completed 
       Item
-        ✓ should allow me to mark items as complete (843ms)
-        ✓ should allow me to un-mark items as complete (978ms)
-        ✓ should allow me to edit an item (1155ms)
+        ✓ should allow me to mark items as complete
+        ✓ should allow me to un-mark items as complete
+        ✓ should allow me to edit an item 
         ✓ should show the remove button on hover
       Editing
-        ✓ should hide other controls when editing (718ms)
-        ✓ should save edits on enter (1093ms)
-        ✓ should save edits on blur (1256ms)
-        ✓ should trim entered text (1163ms)
-        ✓ should remove the item if an empty text string was entered (1033ms)
-        ✓ should cancel edits on escape (1115ms)
+        ✓ should hide other controls when editing 
+        ✓ should save edits on enter 
+        ✓ should save edits on blur 
+        ✓ should trim entered text
+        ✓ should remove the item if an empty text string was entered
+        ✓ should cancel edits on escape 
       Counter
-        ✓ should display the current number of todo items (462ms)
+        ✓ should display the current number of todo items
       Clear completed button
-        ✓ should display the number of completed items (873ms)
-        ✓ should remove completed items when clicked (898ms)
-        ✓ should be hidden when there are no items that are completed (893ms)
+        ✓ should display the number of completed items
+        ✓ should remove completed items when clicked
+        ✓ should be hidden when there are no items that are completed
       Persistence
-        ✓ should persist its data (3832ms)
+        ✓ should persist its data
       Routing
-        ✓ should allow me to display active items (871ms)
-        ✓ should allow me to display completed items (960ms)
-        ✓ should allow me to display all items (1192ms)
-        ✓ should highlight the currently applied filter (1095ms)
+        ✓ should allow me to display active items
+        ✓ should allow me to display completed items
+        ✓ should allow me to display all items
+        ✓ should highlight the currently applied filter
 `
