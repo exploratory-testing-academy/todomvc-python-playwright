@@ -3,9 +3,9 @@ To Do MVC is a popular frontend developer repeat problem for trying out frontend
 
 Site with various implementations: https://todomvc.com 
 
-Claims collection as titles of tests 
+Claims collection as titles of tests at https://github.com/tastejs/todomvc/tree/master/tests
 
-´´´
+`
  No Todos
         ✓ should hide #main and #footer (201ms)
       New Todo
@@ -42,4 +42,4 @@ Claims collection as titles of tests
         ✓ should allow me to display completed items (960ms)
         ✓ should allow me to display all items (1192ms)
         ✓ should highlight the currently applied filter (1095ms)
-´´´
+`
