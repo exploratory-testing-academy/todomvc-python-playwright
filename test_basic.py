@@ -7,7 +7,6 @@ def test_add_todo(page_to_url, input_text):
     page_to_url.locator(".new-todo").fill(input_text)
     page_to_url.locator(".new-todo").press("Enter")
     expect(page_to_url.locator(".todo-list li label")).to_have_text(input_text.strip())
-    #assert input_text.strip() in page_to_url.locator(".todo-list li label").inner_text()
 
 def test_should_not_add_empty_todos(page_to_url):
     page_to_url.locator(".new-todo").fill("")
