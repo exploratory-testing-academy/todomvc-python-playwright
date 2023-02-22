@@ -1,1 +1,3 @@
 .venv
+__pycache__/conftest.cpython-310-pytest-7.2.1.pyc
+__pycache__/conftest.cpython-311-pytest-7.2.1.pyc
