@@ -1,3 +1,7 @@
 pytest
 playwright
 pytest-playwright
+faker
+assertpy
+pytz
+pytest-html
