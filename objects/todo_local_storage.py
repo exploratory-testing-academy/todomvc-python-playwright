@@ -21,6 +21,7 @@ class TodoLocalStorage:
                             return ls_content
         raise ValueError("No expected content in browser context")
 
+
 """
     def set_context(self):
         this = {

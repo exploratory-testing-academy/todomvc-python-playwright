@@ -4,7 +4,7 @@ import time
 
 from faker import Faker
 
-from utils.random_helpers import RandomHelpers
+from utils.helpers import Helpers
 
 fake = Faker("fi_FI")
 Name = collections.namedtuple("Name", "name surname")
@@ -32,7 +32,7 @@ class Data:
     @staticmethod
     def get_values_from_file(filename) -> list:
         """This function reads variable values from given file to list."""
-        path = f"{RandomHelpers().get_data_root()}/{filename}"
+        path = f"{Helpers().get_data_root()}/{filename}"
         with open(path) as file:
             my_variable_list = file.read().splitlines()
         return my_variable_list

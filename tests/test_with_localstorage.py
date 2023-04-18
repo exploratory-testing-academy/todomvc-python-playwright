@@ -6,7 +6,7 @@ from utils.logger import Logger
 log = Logger()
 
 
-class TestMemory:
+class TestWithLocalStorage:
 
     def test_memory(self, br, br_page):
         first_todo = Data().get_fake_sentence(nb_words=2)
