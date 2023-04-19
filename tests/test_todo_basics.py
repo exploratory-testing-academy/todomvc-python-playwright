@@ -17,10 +17,11 @@ class TestTodoBasics:
         p.verify_complete_match_todo_text(the_todo)
 
     def test_add_todo_2(self, page):
-        p = Data().get_fake_sentence(nb_words=2)
-        log.debug(f"{p}")
+        d = Data().get_fake_sentence(nb_words=2)
+        log.debug(f"{d}")
         my_todos = TodoPage(page)
         my_todos.navigate_to()
-        my_todos.fill_todo(p)
+        my_todos.fill_todo(d)
         my_todos.submit_todo_with_enter()
-        my_todos.verify_complete_match_todo_text(p)
+        my_todos.verify_complete_match_todo_text(d)
+

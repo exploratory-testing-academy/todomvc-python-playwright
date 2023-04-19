@@ -64,6 +64,4 @@ class TestBasic:
         expect(page_to_url).to_have_url("https://todomvc.com/examples/vanillajs/#/active")
         assert page_to_url.locator("[data-id]").count() == 2
 
-    def test_start_with_data_from_storage(self, page_to_url):
-       pass
 

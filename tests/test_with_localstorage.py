@@ -2,14 +2,17 @@ from data.data import Data
 from objects.todo_local_storage import TodoLocalStorage
 from objects.todo_page import TodoPage
 from utils.logger import Logger
+from time import sleep
 
 log = Logger()
 
 class TestWithLocalStorage:
 
+#ToDo: move this to fixture, pay attention to scope being correct
     def test_data_setup(self, br_page):
         br_page.evaluate("localStorage.setItem('todos-vanillajs', '[{\"title\":\"hello\",\"completed\":false,\"id\":1}]')")
         br_page.goto('https://todomvc.com/examples/vanillajs/')
+        sleep(10)
         br_page.evaluate("localStorage.setItem('todos-vanillajs', '[]')")
 
     def test_memory(self, br, br_page):

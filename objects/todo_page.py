@@ -38,6 +38,3 @@ class TodoPage:
 
     def verify_todo_count(self, expected_count: int):
         assert expected_count == self.get_todo_count()
-
-
-
