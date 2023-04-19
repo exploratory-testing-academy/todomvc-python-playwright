@@ -9,11 +9,15 @@ log = Logger()
 class TestWithLocalStorage:
 
 #ToDo: move this to fixture, pay attention to scope being correct
-    def test_data_setup(self, br_page):
+    def test_data_setup_to_go(self, br_page):
         br_page.evaluate("localStorage.setItem('todos-vanillajs', '[{\"title\":\"hello\",\"completed\":false,\"id\":1}]')")
         br_page.goto('https://todomvc.com/examples/vanillajs/')
-        sleep(10)
         br_page.evaluate("localStorage.setItem('todos-vanillajs', '[]')")
+
+    def test_data_setup(self, br_page):
+        expected_value = TodoLocalStorage(br_page).set_local_storage_value(True, br_page)
+        p = TodoPage(br_page)
+        p.verify_contains_todo_text(expected_value)
 
     def test_memory(self, br, br_page):
         first_todo = Data().get_fake_sentence(nb_words=2)

@@ -22,6 +22,16 @@ class TodoLocalStorage:
         raise ValueError("No expected content in browser context")
 
 
+    def set_local_storage_value(self, add: bool, br_page) -> str:
+        if add:
+            br_page.evaluate("localStorage.setItem('todos-vanillajs', '[{\"title\":\"Preset data through localstorage\",\"completed\":false,\"id\":1}]')")
+            expected_value = "Preset data through localstorage"
+        else:
+            br_page.evaluate("localStorage.setItem('todos-vanillajs', '[]')")
+            expected_value = "[]"
+        br_page.goto('https://todomvc.com/examples/vanillajs/')
+        return expected_value
+
 """
     def set_context(self):
         this = {
